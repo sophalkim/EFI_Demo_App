@@ -1,5 +1,6 @@
 package ssk.project.efi_demo_app;
 
+import ssk.project.efi_demo_app.reddit_reader_fragment.RedditReaderFragment;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -51,7 +52,7 @@ public class MainActivity extends ActionBarActivity implements
 					SoundFragment.newInstance(this)).commit();
 					break;
 		case 1: 	fragmentManager.beginTransaction().replace(R.id.container,
-					SoundFragment.newInstance(this)).commit();
+					RedditReaderFragment.newInstance("fitness")).commit();
 					break;
 		case 2: 	fragmentManager.beginTransaction().replace(R.id.container,
 					SoundFragment.newInstance(this)).commit();
