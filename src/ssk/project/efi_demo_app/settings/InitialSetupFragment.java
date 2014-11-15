@@ -9,19 +9,24 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class WebImagesFragment extends Fragment {
+public class InitialSetupFragment extends Fragment {
 	
 	String[] x = {
-			"Test Print",
-			"Cleaning",
-			"Ink Volume"
+			"Receive Mode",
+			"Data and Time",
+			"Station ID",
+			"Tone/Pulse",
+			"Dial Tone",
+			"Compatibility",
+			"Reset",
+			"Local Language"
 	};
      
-    WebImagesFragment(){
+    InitialSetupFragment(){
     }    
      
-    public static WebImagesFragment newInstance(){
-        WebImagesFragment instance = new WebImagesFragment();        
+    public static InitialSetupFragment newInstance(){
+        InitialSetupFragment instance = new InitialSetupFragment();        
         return instance;
     }
      
