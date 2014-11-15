@@ -3,8 +3,15 @@
 
     <string name="app_name">EFI_Demo_App</string>
     <string name="title_section1">Current Jobs</string>
-    <string name="title_section2">Queue</string>
-    <string name="title_section3">Ink Level</string>
+    <string name="title_section2">List</string>
+    <string name="title_section3">Printing Queue</string>
+    <string name="title_section4">General Settings</string>
+    <string name="title_section5">Ink Settings</string>
+    <string name="title_section6">Fax</string>
+    <string name="title_section7">Network</string>
+    <string name="title_section8">Print Reports</string>
+    <string name="title_section9">Machine Info</string>
+    <string name="title_section10">Initial Setup</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Cancel Job</string>

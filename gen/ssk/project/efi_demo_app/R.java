@@ -1305,26 +1305,33 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0b000b;
-        public static final int action_example=0x7f0b0013;
-        public static final int action_settings=0x7f0b0014;
+        public static final int action_example=0x7f0b001a;
+        public static final int action_settings=0x7f0b001b;
         public static final int app_name=0x7f0b000d;
-        public static final int button_black_copy=0x7f0b0016;
-        public static final int button_color_copy=0x7f0b0017;
-        public static final int button_scan=0x7f0b0018;
-        public static final int button_start=0x7f0b0020;
-        public static final int navigation_drawer_close=0x7f0b0012;
-        public static final int navigation_drawer_open=0x7f0b0011;
+        public static final int button_black_copy=0x7f0b001d;
+        public static final int button_color_copy=0x7f0b001e;
+        public static final int button_scan=0x7f0b001f;
+        public static final int button_start=0x7f0b0027;
+        public static final int navigation_drawer_close=0x7f0b0019;
+        public static final int navigation_drawer_open=0x7f0b0018;
         public static final int title_section1=0x7f0b000e;
+        public static final int title_section10=0x7f0b0017;
         public static final int title_section2=0x7f0b000f;
         public static final int title_section3=0x7f0b0010;
-        public static final int tv_black_ink_level=0x7f0b0019;
-        public static final int tv_color_ink_level=0x7f0b001a;
-        public static final int tv_quantity_copies=0x7f0b001f;
-        public static final int tv_select_action=0x7f0b0015;
-        public static final int tv_tray_select=0x7f0b001b;
-        public static final int tv_tray_select_1=0x7f0b001c;
-        public static final int tv_tray_select_2=0x7f0b001d;
-        public static final int tv_tray_select_3=0x7f0b001e;
+        public static final int title_section4=0x7f0b0011;
+        public static final int title_section5=0x7f0b0012;
+        public static final int title_section6=0x7f0b0013;
+        public static final int title_section7=0x7f0b0014;
+        public static final int title_section8=0x7f0b0015;
+        public static final int title_section9=0x7f0b0016;
+        public static final int tv_black_ink_level=0x7f0b0020;
+        public static final int tv_color_ink_level=0x7f0b0021;
+        public static final int tv_quantity_copies=0x7f0b0026;
+        public static final int tv_select_action=0x7f0b001c;
+        public static final int tv_tray_select=0x7f0b0022;
+        public static final int tv_tray_select_1=0x7f0b0023;
+        public static final int tv_tray_select_2=0x7f0b0024;
+        public static final int tv_tray_select_3=0x7f0b0025;
     }
     public static final class style {
         /** 
