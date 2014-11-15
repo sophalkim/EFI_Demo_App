@@ -1098,13 +1098,19 @@ containing a value of this type.
         public static final int house_screenshot=0x7f020063;
         public static final int ic_drawer=0x7f020064;
         public static final int ic_launcher=0x7f020065;
-        public static final int orange_button=0x7f020066;
-        public static final int orange_button_custom=0x7f020067;
-        public static final int pdf_screenshot=0x7f020068;
-        public static final int pencil=0x7f020069;
-        public static final int progress_bar_black_ink_coloring=0x7f02006a;
-        public static final int progress_bar_color_ink_coloring=0x7f02006b;
-        public static final int word_screenshot=0x7f02006c;
+        public static final int icon_black_print=0x7f020066;
+        public static final int icon_color_print=0x7f020067;
+        public static final int icon_scan=0x7f020068;
+        public static final int icon_start=0x7f020069;
+        public static final int orange_button=0x7f02006a;
+        public static final int orange_button_custom=0x7f02006b;
+        public static final int pdf_screenshot=0x7f02006c;
+        public static final int pencil=0x7f02006d;
+        public static final int progress_bar_black_ink_coloring=0x7f02006e;
+        public static final int progress_bar_color_ink_coloring=0x7f02006f;
+        public static final int settings_background=0x7f020070;
+        public static final int view_pager_background=0x7f020071;
+        public static final int word_screenshot=0x7f020072;
     }
     public static final class id {
         public static final int action_bar=0x7f06001c;

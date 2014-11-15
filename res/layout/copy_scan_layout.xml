@@ -22,13 +22,15 @@
         android:layout_height="wrap_content"
         android:background="@drawable/black_button_custom"
         android:textColor="#FFFFFF"
-        android:text="@string/button_black_copy" />
+        android:text="@string/button_black_copy"
+        android:drawableRight="@drawable/icon_black_print" />
 
     <Button
         android:id="@+id/button_color_copy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/orange_button_custom"
+        android:drawableRight="@drawable/icon_color_print"
         android:text="@string/button_color_copy" />
 
     <Button
@@ -36,7 +38,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/blue_button_custom"
-        android:text="@string/button_scan" />
+        android:text="@string/button_scan"
+        android:drawableRight="@drawable/icon_scan" />
 
     <TextView
         android:id="@+id/tv_black_ink_level"
