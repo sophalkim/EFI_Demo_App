@@ -1,6 +1,7 @@
 package ssk.project.efi_demo_app;
 
 import ssk.project.efi_demo_app.reddit_reader_fragment.RedditReaderFragment;
+import ssk.project.efi_demo_app.settings.WebImagesFragment;
 import ssk.project.efi_demo_app.view_pager_fragment.ViewPagerFragment;
 import android.app.Activity;
 import android.os.Bundle;
@@ -57,6 +58,9 @@ public class MainActivity extends ActionBarActivity implements
 					break;
 		case 2: 	fragmentManager.beginTransaction().replace(R.id.container,
 					ViewPagerFragment.newInstance()).commit();
+					break;
+		case 3: 	fragmentManager.beginTransaction().replace(R.id.container,
+					WebImagesFragment.newInstance()).commit();
 					break;
 		default: 	fragmentManager
 					.beginTransaction()

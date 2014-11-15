@@ -265,11 +265,11 @@ int id action_bar_root 0x7f06001a
 int id action_bar_subtitle 0x7f060023
 int id action_bar_title 0x7f060022
 int id action_context_bar 0x7f06001d
-int id action_example 0x7f060057
+int id action_example 0x7f060058
 int id action_menu_divider 0x7f060016
 int id action_menu_presenter 0x7f060017
 int id action_mode_close_button 0x7f060024
-int id action_settings 0x7f060056
+int id action_settings 0x7f060057
 int id activity_chooser_view_content 0x7f060025
 int id always 0x7f06000b
 int id awesomepager 0x7f060055
@@ -300,6 +300,7 @@ int id image 0x7f060027
 int id image_view 0x7f060050
 int id listMode 0x7f060001
 int id list_item 0x7f060029
+int id list_view_1 0x7f060056
 int id middle 0x7f060012
 int id navigation_drawer 0x7f06003e
 int id never 0x7f060009
@@ -379,6 +380,7 @@ int layout posts 0x7f03001d
 int layout reddit_reader 0x7f03001e
 int layout support_simple_spinner_dropdown_item 0x7f03001f
 int layout view_pager_layout 0x7f030020
+int layout web_images_layout 0x7f030021
 int menu global 0x7f0d0000
 int menu main 0x7f0d0001
 int raw alabama 0x7f050000

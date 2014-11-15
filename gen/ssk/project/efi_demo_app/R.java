@@ -1115,11 +1115,11 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f060023;
         public static final int action_bar_title=0x7f060022;
         public static final int action_context_bar=0x7f06001d;
-        public static final int action_example=0x7f060057;
+        public static final int action_example=0x7f060058;
         public static final int action_menu_divider=0x7f060016;
         public static final int action_menu_presenter=0x7f060017;
         public static final int action_mode_close_button=0x7f060024;
-        public static final int action_settings=0x7f060056;
+        public static final int action_settings=0x7f060057;
         public static final int activity_chooser_view_content=0x7f060025;
         public static final int always=0x7f06000b;
         public static final int awesomepager=0x7f060055;
@@ -1150,6 +1150,7 @@ containing a value of this type.
         public static final int image_view=0x7f060050;
         public static final int listMode=0x7f060001;
         public static final int list_item=0x7f060029;
+        public static final int list_view_1=0x7f060056;
         public static final int middle=0x7f060012;
         public static final int navigation_drawer=0x7f06003e;
         public static final int never=0x7f060009;
@@ -1255,6 +1256,7 @@ containing a value of this type.
         public static final int reddit_reader=0x7f03001e;
         public static final int support_simple_spinner_dropdown_item=0x7f03001f;
         public static final int view_pager_layout=0x7f030020;
+        public static final int web_images_layout=0x7f030021;
     }
     public static final class menu {
         public static final int global=0x7f0d0000;
