@@ -10,15 +10,16 @@
     tools:context="ssk.project.studiodemo.MainActivity$SoundFragment" >
 
     <TextView
-        android:id="@+id/soundTextView"
+        android:id="@+id/tv_select_action"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/tv_select_action" />
 
     <Button
         android:id="@+id/button_black_copy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_black_copy"/>
+        android:text="@string/button_black_copy" />
 
     <Button
         android:id="@+id/button_color_copy"
@@ -31,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_scan" />
-    
+
     <TextView
         android:id="@+id/tv_black_ink_level"
         android:layout_width="wrap_content"
@@ -43,10 +44,10 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:progressDrawable="@drawable/progress_bar_black_ink_coloring"
         android:progress="73"
+        android:progressDrawable="@drawable/progress_bar_black_ink_coloring"
         android:secondaryProgress="100" />
-    
+
     <TextView
         android:id="@+id/tv_color_ink_level"
         android:layout_width="wrap_content"
@@ -58,8 +59,70 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:progressDrawable="@drawable/progress_bar_color_ink_coloring"
         android:progress="43"
+        android:progressDrawable="@drawable/progress_bar_color_ink_coloring"
         android:secondaryProgress="100" />
+    
+    <TextView
+        android:id="@+id/tv_tray_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_tray_select" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/tv_tray_select_1" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_tray_select_2" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_tray_select_3" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/tv_quantity_copies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_quantity_copies" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+    
+    <RelativeLayout
+    	android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"   
+   		android:orientation="horizontal" >
+
+	    <Button
+	        android:id="@+id/button_start"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/button_start" />
+    
+    </RelativeLayout>
 
 </LinearLayout>

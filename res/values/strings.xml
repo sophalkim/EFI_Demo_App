@@ -11,11 +11,20 @@
     <string name="action_settings">Settings</string>
     
     
+    <string name="tv_select_action">Welcome</string>
     <string name="button_black_copy">Black Copy</string>
     <string name="button_color_copy">Color Copy</string>
     <string name="button_scan">Scan</string>
     
     <string name="tv_black_ink_level">Black Ink Level</string>
     <string name="tv_color_ink_level">Color Ink Level</string>
+    
+    <string name="tv_tray_select">Select Tray</string>
+    <string name="tv_tray_select_1">Tray # 1</string>
+    <string name="tv_tray_select_2">Tray # 2</string>
+    <string name="tv_tray_select_3">Tray # 3</string>
+    
+    <string name="tv_quantity_copies">Number of Copies</string>
+    <string name="button_start">Start</string>
 
 </resources>
