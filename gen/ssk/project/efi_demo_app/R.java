@@ -1092,12 +1092,15 @@ containing a value of this type.
         public static final int gray_button=0x7f02005d;
         public static final int green_button=0x7f02005e;
         public static final int green_button_custom=0x7f02005f;
-        public static final int ic_drawer=0x7f020060;
-        public static final int ic_launcher=0x7f020061;
-        public static final int orange_button=0x7f020062;
-        public static final int orange_button_custom=0x7f020063;
-        public static final int progress_bar_black_ink_coloring=0x7f020064;
-        public static final int progress_bar_color_ink_coloring=0x7f020065;
+        public static final int hamburger=0x7f020060;
+        public static final int home_button=0x7f020061;
+        public static final int ic_drawer=0x7f020062;
+        public static final int ic_launcher=0x7f020063;
+        public static final int orange_button=0x7f020064;
+        public static final int orange_button_custom=0x7f020065;
+        public static final int pencil=0x7f020066;
+        public static final int progress_bar_black_ink_coloring=0x7f020067;
+        public static final int progress_bar_color_ink_coloring=0x7f020068;
     }
     public static final class id {
         public static final int action_bar=0x7f06001c;
@@ -1108,13 +1111,14 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f060023;
         public static final int action_bar_title=0x7f060022;
         public static final int action_context_bar=0x7f06001d;
-        public static final int action_example=0x7f060056;
+        public static final int action_example=0x7f060057;
         public static final int action_menu_divider=0x7f060016;
         public static final int action_menu_presenter=0x7f060017;
         public static final int action_mode_close_button=0x7f060024;
-        public static final int action_settings=0x7f060055;
+        public static final int action_settings=0x7f060056;
         public static final int activity_chooser_view_content=0x7f060025;
         public static final int always=0x7f06000b;
+        public static final int awesomepager=0x7f060055;
         public static final int beginning=0x7f060011;
         public static final int button_black_copy=0x7f060040;
         public static final int button_color_copy=0x7f060041;
@@ -1246,6 +1250,7 @@ containing a value of this type.
         public static final int posts=0x7f03001d;
         public static final int reddit_reader=0x7f03001e;
         public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int view_pager_layout=0x7f030020;
     }
     public static final class menu {
         public static final int global=0x7f0d0000;

@@ -1,6 +1,7 @@
 package ssk.project.efi_demo_app;
 
 import ssk.project.efi_demo_app.reddit_reader_fragment.RedditReaderFragment;
+import ssk.project.efi_demo_app.view_pager_fragment.ViewPagerFragment;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -55,7 +56,7 @@ public class MainActivity extends ActionBarActivity implements
 					RedditReaderFragment.newInstance("fitness")).commit();
 					break;
 		case 2: 	fragmentManager.beginTransaction().replace(R.id.container,
-					CopyScanFragment.newInstance(this)).commit();
+					ViewPagerFragment.newInstance()).commit();
 					break;
 		default: 	fragmentManager
 					.beginTransaction()
