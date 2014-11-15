@@ -23,7 +23,7 @@ public class ViewPagerFragment extends Fragment {
 	 * Returns a new instance of this fragment for the given section number.
 	 */
 	private ViewPager awesomePager;
-	private static int NUM_AWESOME_VIEWS = 3;
+	private static int NUM_AWESOME_VIEWS = 4;
 	private AwesomePagerAdapter awesomeAdapter;
 	
 	
@@ -68,9 +68,10 @@ public class ViewPagerFragment extends Fragment {
     	}
     	
     	private Integer[] mThumbIds = {    
-    			R.drawable.hamburger,
-    			R.drawable.home_button,
-    			R.drawable.pencil,
+    			R.drawable.word_screenshot,
+    			R.drawable.pdf_screenshot,
+    			R.drawable.house_screenshot,
+    			R.drawable.family_screenshot
     	};
     	
     	@Override
