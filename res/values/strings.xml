@@ -11,11 +11,11 @@
     <string name="action_settings">Settings</string>
     
     
-    <string name="black_copy_button">Black Copy</string>
-    <string name="color_copy_button">Color Copy</string>
-    <string name="scan_button">Scan</string>
+    <string name="button_black_copy">Black Copy</string>
+    <string name="button_color_copy">Color Copy</string>
+    <string name="button_scan">Scan</string>
     
-    <string name="black_ink_level_TextView">Black Ink Level</string>
-    <string name="color_ink_level_TextView">Color Ink Level</string>
+    <string name="tv_black_ink_level">Black Ink Level</string>
+    <string name="tv_color_ink_level">Color Ink Level</string>
 
 </resources>

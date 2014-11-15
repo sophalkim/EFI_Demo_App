@@ -15,48 +15,50 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/black_copy_button"
+        android:id="@+id/button_black_copy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/black_copy_button"/>
+        android:text="@string/button_black_copy"/>
 
     <Button
-        android:id="@+id/color_copy_button"
+        android:id="@+id/button_color_copy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/color_copy_button" />
+        android:text="@string/button_color_copy" />
 
     <Button
-        android:id="@+id/scan_button"
+        android:id="@+id/button_scan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/scan_button" />
+        android:text="@string/button_scan" />
     
     <TextView
-        android:id="@+id/black_ink_level_TextView"
+        android:id="@+id/tv_black_ink_level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/black_ink_level_TextView" />
+        android:text="@string/tv_black_ink_level" />
 
     <ProgressBar
-        android:id="@+id/black_ink_ProgressBar"
+        android:id="@+id/progress_bar_black_ink"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/progress_bar_black_ink_coloring"
         android:progress="73"
         android:secondaryProgress="100" />
     
     <TextView
-        android:id="@+id/color_ink_level_TextView"
+        android:id="@+id/tv_color_ink_level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/color_ink_level_TextView" />
+        android:text="@string/tv_color_ink_level" />
 
     <ProgressBar
-        android:id="@+id/color_ink_ProgressBar"
+        android:id="@+id/progress_bar_color_ink"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/progress_bar_color_ink_coloring"
         android:progress="43"
         android:secondaryProgress="100" />
 

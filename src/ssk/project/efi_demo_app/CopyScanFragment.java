@@ -6,25 +6,26 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
-public class SoundFragment extends Fragment {
+public class CopyScanFragment extends Fragment {
 
 	Context context;
 	
-	public static SoundFragment newInstance(Context context) {
-		SoundFragment fragment = new SoundFragment(context);
+	public static CopyScanFragment newInstance(Context context) {
+		CopyScanFragment fragment = new CopyScanFragment(context);
 		return fragment;
 	}
 
-	public SoundFragment(Context context) {
+	public CopyScanFragment(Context context) {
 		this.context = context;
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.sound_layout, container,
+		View rootView = inflater.inflate(R.layout.copy_scan_layout, container,
 				false);
 		TextView tv = (TextView) rootView.findViewById(R.id.soundTextView);
 		tv.setText("Click the Button to play a sound");
@@ -37,6 +38,7 @@ public class SoundFragment extends Fragment {
 //			}
 //			
 //		});
+		ProgressBar progressBar = (ProgressBar) rootView.findViewById(R.id.progress_bar_black_ink);
 		return rootView;
 	}
 }

@@ -49,13 +49,13 @@ public class MainActivity extends ActionBarActivity implements
 		FragmentManager fragmentManager = getSupportFragmentManager();
 		switch (position) {
 		case 0: 	fragmentManager.beginTransaction().replace(R.id.container,
-					SoundFragment.newInstance(this)).commit();
+					CopyScanFragment.newInstance(this)).commit();
 					break;
 		case 1: 	fragmentManager.beginTransaction().replace(R.id.container,
 					RedditReaderFragment.newInstance("fitness")).commit();
 					break;
 		case 2: 	fragmentManager.beginTransaction().replace(R.id.container,
-					SoundFragment.newInstance(this)).commit();
+					CopyScanFragment.newInstance(this)).commit();
 					break;
 		default: 	fragmentManager
 					.beginTransaction()
