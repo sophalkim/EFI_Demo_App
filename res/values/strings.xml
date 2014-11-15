@@ -9,6 +9,13 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Cancel Job</string>
     <string name="action_settings">Settings</string>
-    <string name="play_sound">Play Sound</string>
+    
+    
+    <string name="black_copy_button">Black Copy</string>
+    <string name="color_copy_button">Color Copy</string>
+    <string name="scan_button">Scan</string>
+    
+    <string name="black_ink_level_TextView">Black Ink Level</string>
+    <string name="color_ink_level_TextView">Color Ink Level</string>
 
 </resources>

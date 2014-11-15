@@ -15,9 +15,49 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/soundButton"
+        android:id="@+id/black_copy_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/play_sound"/>
+        android:text="@string/black_copy_button"/>
+
+    <Button
+        android:id="@+id/color_copy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/color_copy_button" />
+
+    <Button
+        android:id="@+id/scan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_button" />
+    
+    <TextView
+        android:id="@+id/black_ink_level_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/black_ink_level_TextView" />
+
+    <ProgressBar
+        android:id="@+id/black_ink_ProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="73"
+        android:secondaryProgress="100" />
+    
+    <TextView
+        android:id="@+id/color_ink_level_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/color_ink_level_TextView" />
+
+    <ProgressBar
+        android:id="@+id/color_ink_ProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="43"
+        android:secondaryProgress="100" />
 
 </LinearLayout>
