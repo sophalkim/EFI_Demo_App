@@ -1,5 +1,6 @@
 package ssk.project.efi_demo_app.view_pager_fragment;
 
+import ssk.project.efi_demo_app.Custom_Image_ArrayAdapter;
 import ssk.project.efi_demo_app.R;
 import android.app.Activity;
 import android.content.Context;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ListView;
 
 public class ViewPagerFragment extends Fragment {
 	/**
@@ -50,6 +52,19 @@ public class ViewPagerFragment extends Fragment {
 		
 		Context context;
 		
+		private String[] x = {
+				"Current Jobs",
+				"List",
+				"Printing Queue",
+				"General Settings",
+				"Ink Settings",
+				"Fax",
+				"Network",
+				"Print Reports",
+				"Machine Info",
+				"Initial Setup"
+		};
+		
 		public AwesomePagerAdapter(Activity activity) {
 			context = activity;
 		}
@@ -60,11 +75,18 @@ public class ViewPagerFragment extends Fragment {
     	
     	@Override
     	public Object instantiateItem(ViewGroup collection, int position) {
+    		if (position == 3) {
+    			ListView lv = new ListView(context);
+        		Custom_Image_ArrayAdapter adapter = new Custom_Image_ArrayAdapter(getActivity(), x);
+        		lv.setAdapter(adapter);
+        		collection.addView(lv, 3);
+        		return lv;
+    		}
     		ImageView iv = new ImageView(context);
     		iv.setImageResource(mThumbIds[position]);
-    		collection.addView(iv, 0);
-    		
+    		collection.addView(iv, 0);    		
     		return iv;
+    		
     	}
     	
     	private Integer[] mThumbIds = {    
