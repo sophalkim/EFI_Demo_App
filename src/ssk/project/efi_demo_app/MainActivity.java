@@ -25,17 +25,9 @@ import android.view.ViewGroup;
 public class MainActivity extends ActionBarActivity implements
 		NavigationDrawerFragment.NavigationDrawerCallbacks {
 
-	/**
-	 * Fragment managing the behaviors, interactions and presentation of the
-	 * navigation drawer.
-	 */
 	private NavigationDrawerFragment mNavigationDrawerFragment;
-
-	/**
-	 * Used to store the last screen title. For use in
-	 * {@link #restoreActionBar()}.
-	 */
 	private CharSequence mTitle;
+	boolean preview = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -58,33 +50,43 @@ public class MainActivity extends ActionBarActivity implements
 		switch (position) {
 		case 0: 	fragmentManager.beginTransaction().replace(R.id.container,
 					CopyScanFragment.newInstance(this)).commit();
+					preview = false;
 					break;
 		case 1: 	fragmentManager.beginTransaction().replace(R.id.container,
 					RedditReaderFragment.newInstance("fitness")).commit();
+					preview = false;
 					break;
 		case 2: 	fragmentManager.beginTransaction().replace(R.id.container,
 					ViewPagerFragment.newInstance()).commit();
+					preview = true;
 					break;
 		case 3: 	fragmentManager.beginTransaction().replace(R.id.container,
 					InkSettingsFragment.newInstance()).commit();
+					preview = false;
 					break;
 		case 4: 	fragmentManager.beginTransaction().replace(R.id.container,
 					GeneralSetupFragment.newInstance()).commit();
+					preview = false;
 					break;
 		case 5: 	fragmentManager.beginTransaction().replace(R.id.container,
 					FaxFragment.newInstance()).commit();
+					preview = false;
 					break;
 		case 6: 	fragmentManager.beginTransaction().replace(R.id.container,
 					NetworkFragment.newInstance()).commit();
+					preview = false;
 					break;
 		case 7: 	fragmentManager.beginTransaction().replace(R.id.container,
 					PrintReportsFragment.newInstance()).commit();
+					preview = false;
 					break;
 		case 8: 	fragmentManager.beginTransaction().replace(R.id.container,
 					MachineInfoFragment.newInstance()).commit();
+					preview = false;
 					break;
 		case 9: 	fragmentManager.beginTransaction().replace(R.id.container,
 					InitialSetupFragment.newInstance()).commit();
+					preview = false;
 					break;
 		
 		default: 	fragmentManager
@@ -118,12 +120,15 @@ public class MainActivity extends ActionBarActivity implements
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		if (!mNavigationDrawerFragment.isDrawerOpen()) {
+		if (!mNavigationDrawerFragment.isDrawerOpen() && !preview) {
 			// Only show items in the action bar relevant to this screen
 			// if the drawer is not showing. Otherwise, let the drawer
 			// decide what to show in the action bar.
-			getMenuInflater().inflate(R.menu.main, menu);
 			restoreActionBar();
+			return true;
+		}
+		if (preview) {
+			getMenuInflater().inflate(R.menu.preview, menu);
 			return true;
 		}
 		return super.onCreateOptionsMenu(menu);

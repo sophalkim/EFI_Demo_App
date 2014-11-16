@@ -27,7 +27,6 @@ public class CopyScanFragment extends Fragment {
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.copy_scan_layout, container,
 				false);
-		TextView tv = (TextView) rootView.findViewById(R.id.tv_select_action);
 //		Button button = (Button) rootView.findViewById(R.id.soundButton);
 //		button.setOnClickListener(new OnClickListener() {
 //

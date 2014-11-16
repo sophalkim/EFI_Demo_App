@@ -7,14 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/view_pager_background"
+    android:background="@drawable/black_matte_background"
     tools:context="ssk.project.studiodemo.MainActivity$SoundFragment" >
-
-    <TextView
-        android:id="@+id/tv_select_action"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tv_select_action" />
 
     <Button
         android:id="@+id/button_black_copy"
@@ -45,6 +39,7 @@
         android:id="@+id/tv_black_ink_level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#FFF"
         android:text="@string/tv_black_ink_level" />
 
     <ProgressBar
@@ -60,6 +55,7 @@
         android:id="@+id/tv_color_ink_level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#FFF"
         android:text="@string/tv_color_ink_level" />
 
     <ProgressBar
@@ -75,6 +71,7 @@
         android:id="@+id/tv_tray_select"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#FFF"
         android:text="@string/tv_tray_select" />
 
     <RadioGroup
@@ -88,18 +85,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
+            android:textColor="#FFF"
             android:text="@string/tv_tray_select_1" />
 
         <RadioButton
             android:id="@+id/radio1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#FFF"
             android:text="@string/tv_tray_select_2" />
 
         <RadioButton
             android:id="@+id/radio2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#FFF"
             android:text="@string/tv_tray_select_3" />
     </RadioGroup>
     
@@ -107,6 +107,7 @@
         android:id="@+id/tv_quantity_copies"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#FFF"
         android:text="@string/tv_quantity_copies" />
 
     <EditText
