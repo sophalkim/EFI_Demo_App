@@ -1,6 +1,7 @@
 package ssk.project.efi_demo_app;
 
 import ssk.project.efi_demo_app.reddit_reader_fragment.RedditReaderFragment;
+import ssk.project.efi_demo_app.ruby_on_rails_json_parser_fragment.Ruby_on_Rails_JSON_Parser_Fragment;
 import ssk.project.efi_demo_app.settings.FaxFragment;
 import ssk.project.efi_demo_app.settings.GeneralSetupFragment;
 import ssk.project.efi_demo_app.settings.InitialSetupFragment;
@@ -57,7 +58,7 @@ public class MainActivity extends ActionBarActivity implements
 					preview = false;
 					break;
 		case 2:     fragmentManager.beginTransaction().replace(R.id.container,
-					RedditReaderFragment.newInstance("fitness")).commit();
+					Ruby_on_Rails_JSON_Parser_Fragment.newInstance()).commit();
 					preview = false;
 					break;
 		case 3: 	fragmentManager.beginTransaction().replace(R.id.container,
