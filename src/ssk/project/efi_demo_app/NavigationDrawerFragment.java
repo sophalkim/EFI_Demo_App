@@ -62,7 +62,8 @@ public class NavigationDrawerFragment extends Fragment {
 	
 	private String[] x = {
 			"Current Jobs",
-			"List",
+			"Parse JSON Reddit",
+			"Ruby on Rails JSON",
 			"Printing Queue",
 			"General Settings",
 			"Ink Settings",

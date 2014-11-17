@@ -8,9 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ssk.project.efi_demo_app.R;
-import ssk.project.efi_demo_app.R.id;
-import ssk.project.efi_demo_app.R.layout;
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
