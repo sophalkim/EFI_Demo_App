@@ -1,5 +1,6 @@
 package ssk.project.efi_demo_app;
 
+import ssk.project.efi_demo.app.ruby_on_rails_PUT_fragment.PutFragment;
 import ssk.project.efi_demo_app.reddit_reader_fragment.RedditReaderFragment;
 import ssk.project.efi_demo_app.ruby_on_rails_json_parser_fragment.Ruby_on_Rails_JSON_Parser_Fragment;
 import ssk.project.efi_demo_app.settings.FaxFragment;
@@ -61,35 +62,39 @@ public class MainActivity extends ActionBarActivity implements
 					Ruby_on_Rails_JSON_Parser_Fragment.newInstance()).commit();
 					preview = false;
 					break;
-		case 3: 	fragmentManager.beginTransaction().replace(R.id.container,
+		case 3:     fragmentManager.beginTransaction().replace(R.id.container,
+					PutFragment.newInstance()).commit();
+					preview = false;
+					break;			
+		case 4: 	fragmentManager.beginTransaction().replace(R.id.container,
 					ViewPagerFragment.newInstance()).commit();
 					preview = true;
 					break;
-		case 4: 	fragmentManager.beginTransaction().replace(R.id.container,
+		case 5: 	fragmentManager.beginTransaction().replace(R.id.container,
 					InkSettingsFragment.newInstance()).commit();
 					preview = false;
 					break;
-		case 5: 	fragmentManager.beginTransaction().replace(R.id.container,
+		case 6: 	fragmentManager.beginTransaction().replace(R.id.container,
 					GeneralSetupFragment.newInstance()).commit();
 					preview = false;
 					break;
-		case 6: 	fragmentManager.beginTransaction().replace(R.id.container,
+		case 7: 	fragmentManager.beginTransaction().replace(R.id.container,
 					FaxFragment.newInstance()).commit();
 					preview = false;
 					break;
-		case 7: 	fragmentManager.beginTransaction().replace(R.id.container,
+		case 8: 	fragmentManager.beginTransaction().replace(R.id.container,
 					NetworkFragment.newInstance()).commit();
 					preview = false;
 					break;
-		case 8: 	fragmentManager.beginTransaction().replace(R.id.container,
+		case 9: 	fragmentManager.beginTransaction().replace(R.id.container,
 					PrintReportsFragment.newInstance()).commit();
 					preview = false;
 					break;
-		case 9: 	fragmentManager.beginTransaction().replace(R.id.container,
+		case 10: 	fragmentManager.beginTransaction().replace(R.id.container,
 					MachineInfoFragment.newInstance()).commit();
 					preview = false;
 					break;
-		case 10: 	fragmentManager.beginTransaction().replace(R.id.container,
+		case 11: 	fragmentManager.beginTransaction().replace(R.id.container,
 					InitialSetupFragment.newInstance()).commit();
 					preview = false;
 					break;
