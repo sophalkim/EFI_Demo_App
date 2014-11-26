@@ -64,7 +64,6 @@ public class NavigationDrawerFragment extends Fragment {
 			"Current Jobs",
 			"Parse JSON Reddit",
 			"Ruby on Rails JSON",
-			"PUT request to Server",
 			"Printing Queue",
 			"General Settings",
 			"Ink Settings",

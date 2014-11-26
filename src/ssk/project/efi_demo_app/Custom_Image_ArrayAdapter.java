@@ -16,7 +16,6 @@ public class Custom_Image_ArrayAdapter extends ArrayAdapter<String> {
 			R.drawable.icon_black_print, 
 			R.drawable.icon_search,
 			R.drawable.icon_search,
-			R.drawable.icon_report,
 			R.drawable.icon_settings,
 			R.drawable.icon_ink,
 			R.drawable.icon_fax,

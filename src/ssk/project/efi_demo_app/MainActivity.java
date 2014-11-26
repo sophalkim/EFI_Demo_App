@@ -1,6 +1,5 @@
 package ssk.project.efi_demo_app;
 
-import ssk.project.efi_demo.app.ruby_on_rails_PUT_fragment.PutFragment;
 import ssk.project.efi_demo_app.reddit_reader_fragment.RedditReaderFragment;
 import ssk.project.efi_demo_app.ruby_on_rails_json_parser_fragment.Ruby_on_Rails_JSON_Parser_Fragment;
 import ssk.project.efi_demo_app.settings.FaxFragment;
@@ -29,7 +28,7 @@ public class MainActivity extends ActionBarActivity implements
 
 	private NavigationDrawerFragment mNavigationDrawerFragment;
 	private CharSequence mTitle;
-	boolean preview = false;
+	int menuNumber = 0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -52,51 +51,38 @@ public class MainActivity extends ActionBarActivity implements
 		switch (position) {
 		case 0: 	fragmentManager.beginTransaction().replace(R.id.container,
 					CopyScanFragment.newInstance(this)).commit();
-					preview = false;
 					break;
 		case 1: 	fragmentManager.beginTransaction().replace(R.id.container,
 					RedditReaderFragment.newInstance("fitness")).commit();
-					preview = false;
 					break;
 		case 2:     fragmentManager.beginTransaction().replace(R.id.container,
 					Ruby_on_Rails_JSON_Parser_Fragment.newInstance()).commit();
-					preview = false;
-					break;
-		case 3:     fragmentManager.beginTransaction().replace(R.id.container,
-					PutFragment.newInstance()).commit();
-					preview = false;
+					menuNumber = 2;
 					break;			
-		case 4: 	fragmentManager.beginTransaction().replace(R.id.container,
+		case 3: 	fragmentManager.beginTransaction().replace(R.id.container,
 					ViewPagerFragment.newInstance()).commit();
-					preview = true;
+					menuNumber = 3;
+					break;
+		case 4: 	fragmentManager.beginTransaction().replace(R.id.container,
+					InkSettingsFragment.newInstance()).commit();
 					break;
 		case 5: 	fragmentManager.beginTransaction().replace(R.id.container,
-					InkSettingsFragment.newInstance()).commit();
-					preview = false;
+					GeneralSetupFragment.newInstance()).commit();
 					break;
 		case 6: 	fragmentManager.beginTransaction().replace(R.id.container,
-					GeneralSetupFragment.newInstance()).commit();
-					preview = false;
+					FaxFragment.newInstance()).commit();
 					break;
 		case 7: 	fragmentManager.beginTransaction().replace(R.id.container,
-					FaxFragment.newInstance()).commit();
-					preview = false;
+					NetworkFragment.newInstance()).commit();
 					break;
 		case 8: 	fragmentManager.beginTransaction().replace(R.id.container,
-					NetworkFragment.newInstance()).commit();
-					preview = false;
+					PrintReportsFragment.newInstance()).commit();
 					break;
 		case 9: 	fragmentManager.beginTransaction().replace(R.id.container,
-					PrintReportsFragment.newInstance()).commit();
-					preview = false;
+					MachineInfoFragment.newInstance()).commit();
 					break;
 		case 10: 	fragmentManager.beginTransaction().replace(R.id.container,
-					MachineInfoFragment.newInstance()).commit();
-					preview = false;
-					break;
-		case 11: 	fragmentManager.beginTransaction().replace(R.id.container,
 					InitialSetupFragment.newInstance()).commit();
-					preview = false;
 					break;
 		
 		default: 	fragmentManager
@@ -130,16 +116,17 @@ public class MainActivity extends ActionBarActivity implements
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		if (!mNavigationDrawerFragment.isDrawerOpen() && !preview) {
+		if (mNavigationDrawerFragment.isDrawerOpen()) {
 			// Only show items in the action bar relevant to this screen
 			// if the drawer is not showing. Otherwise, let the drawer
 			// decide what to show in the action bar.
 			restoreActionBar();
 			return true;
 		}
-		if (preview) {
-			getMenuInflater().inflate(R.menu.preview, menu);
-			return true;
+		switch (menuNumber) {
+			case 0: return true;
+			case 2: getMenuInflater().inflate(R.menu.menu_add_user, menu); return true;
+			case 3: getMenuInflater().inflate(R.menu.preview, menu); return true;
 		}
 		return super.onCreateOptionsMenu(menu);
 	}

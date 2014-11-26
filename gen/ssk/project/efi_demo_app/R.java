@@ -1293,7 +1293,8 @@ containing a value of this type.
     public static final class menu {
         public static final int global=0x7f0d0000;
         public static final int main=0x7f0d0001;
-        public static final int preview=0x7f0d0002;
+        public static final int menu_add_user=0x7f0d0002;
+        public static final int preview=0x7f0d0003;
     }
     public static final class raw {
         public static final int alabama=0x7f050000;

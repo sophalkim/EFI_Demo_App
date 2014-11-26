@@ -1,6 +1,18 @@
 package ssk.project.efi_demo.app.ruby_on_rails_PUT_fragment;
 
+import java.io.IOException;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import ssk.project.efi_demo_app.R;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -18,6 +30,8 @@ public class PutFragment extends Fragment {
 	EditText etEmail;
 	String name = "";
 	String email = "";
+	
+	private final String URL_TEMPLATE= "https://sophalkim.herokuapp.com/users";
 	
 	
     PutFragment(){
@@ -42,14 +56,70 @@ public class PutFragment extends Fragment {
 
 			@Override
 			public void onClick(View v) {
-				name = etName.getText().toString();
-				email = etEmail.getText().toString();
+				Runnable r = new Runnable()
+				{
+				    @Override
+				    public void run()
+				    {
+				        try {
+							postData();
+						} catch (JSONException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+				    }
+				};
+
+				Thread t = new Thread(r);
+				t.start();
 				Toast.makeText(getActivity(), name + ": Submitted to Ruby on Rails Server", Toast.LENGTH_LONG).show();
 			}
         	
         });
         
         return v;
+    }
+    
+    public void postData() throws JSONException {
+        // Create a new HttpClient and Post Header
+        HttpClient httpclient = new DefaultHttpClient();
+        HttpPost httppost = new HttpPost(URL_TEMPLATE);
+        name = etName.getText().toString();
+        email = etEmail.getText().toString();
+        try {
+            // Add your data
+        	JSONObject jsonobj = new JSONObject();
+        	jsonobj.put("name", name);
+        	jsonobj.put("email", email);
+        	StringEntity se = new StringEntity(jsonobj.toString());
+            httppost.setEntity(se);
+
+            // Execute HTTP Post Request
+            HttpResponse response = httpclient.execute(httppost);
+            
+        } catch (ClientProtocolException e) {
+            // TODO Auto-generated catch block
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+        }
+    }
+    
+    class PostDataTask extends AsyncTask<Void, Void, Void> {
+
+        protected void onPostExecute() {
+
+        }
+
+		@Override
+		protected Void doInBackground(Void... params) {
+			try {
+				postData();
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return null;
+		}
     }
   
 }
