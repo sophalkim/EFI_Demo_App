@@ -65,19 +65,6 @@ public class ViewPagerFragment extends Fragment {
 		
 		Context context;
 		
-		private String[] x = {
-				"Current Jobs",
-				"List",
-				"Printing Queue",
-				"General Settings",
-				"Ink Settings",
-				"Fax",
-				"Network",
-				"Print Reports",
-				"Machine Info",
-				"Initial Setup"
-		};
-		
 		public AwesomePagerAdapter(Activity activity) {
 			context = activity;
 		}
