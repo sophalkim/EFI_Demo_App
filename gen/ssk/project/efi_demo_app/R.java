@@ -988,12 +988,19 @@ containing a value of this type.
          (the screen is in portrait). This may be either a fraction or a dimension.
          */
         public static final int dialog_fixed_width_minor=0x7f090012;
+        public static final int horizontal_page_margin=0x7f09001d;
+        public static final int margin_huge=0x7f09001b;
+        public static final int margin_large=0x7f09001a;
+        public static final int margin_medium=0x7f090019;
+        public static final int margin_small=0x7f090018;
+        public static final int margin_tiny=0x7f090017;
         /** 
          Per the design guidelines, navigation drawers should be between 240dp and 320dp:
          https://developer.android.com/design/patterns/navigation-drawer.html
     
          */
-        public static final int navigation_drawer_width=0x7f090017;
+        public static final int navigation_drawer_width=0x7f09001c;
+        public static final int vertical_page_margin=0x7f09001e;
     }
     public static final class drawable {
         public static final int abc_ab_bottom_solid_dark_holo=0x7f020000;
@@ -1118,8 +1125,9 @@ containing a value of this type.
         public static final int progress_bar_black_ink_coloring=0x7f020077;
         public static final int progress_bar_color_ink_coloring=0x7f020078;
         public static final int settings_background=0x7f020079;
-        public static final int view_pager_background=0x7f02007a;
-        public static final int word_screenshot=0x7f02007b;
+        public static final int tile=0x7f02007a;
+        public static final int view_pager_background=0x7f02007b;
+        public static final int word_screenshot=0x7f02007c;
     }
     public static final class id {
         public static final int action_bar=0x7f06001c;
@@ -1130,25 +1138,25 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f060023;
         public static final int action_bar_title=0x7f060022;
         public static final int action_context_bar=0x7f06001d;
-        public static final int action_example=0x7f060063;
+        public static final int action_example=0x7f060065;
         public static final int action_menu_divider=0x7f060016;
         public static final int action_menu_presenter=0x7f060017;
         public static final int action_mode_close_button=0x7f060024;
-        public static final int action_settings=0x7f060062;
+        public static final int action_settings=0x7f060064;
         public static final int activity_chooser_view_content=0x7f060025;
         public static final int always=0x7f06000b;
-        public static final int awesomepager=0x7f060060;
+        public static final int awesomepager=0x7f060062;
         public static final int beginning=0x7f060011;
-        public static final int btn_put=0x7f06005e;
-        public static final int button1=0x7f060055;
-        public static final int button2=0x7f060057;
-        public static final int button3=0x7f060056;
-        public static final int button4=0x7f060058;
+        public static final int btn_put=0x7f060060;
+        public static final int button1=0x7f060057;
+        public static final int button2=0x7f060059;
+        public static final int button3=0x7f060058;
+        public static final int button4=0x7f06005a;
         public static final int button_black_copy=0x7f06003f;
         public static final int button_color_copy=0x7f060040;
         public static final int button_scan=0x7f060041;
         public static final int button_start=0x7f06004d;
-        public static final int cancel=0x7f060066;
+        public static final int cancel=0x7f060068;
         public static final int checkbox=0x7f06002d;
         public static final int collapseActionView=0x7f06000d;
         public static final int container=0x7f06003d;
@@ -1160,32 +1168,34 @@ containing a value of this type.
         public static final int editText1=0x7f06004c;
         public static final int edit_query=0x7f060030;
         public static final int end=0x7f060013;
-        public static final int et_put_email=0x7f06005d;
-        public static final int et_put_name=0x7f06005b;
+        public static final int et_put_email=0x7f06005f;
+        public static final int et_put_name=0x7f06005d;
         public static final int expand_activities_button=0x7f060026;
         public static final int expanded_menu=0x7f06002c;
-        public static final int fragments_holder=0x7f06005f;
+        public static final int fragments_holder=0x7f060061;
         public static final int home=0x7f060014;
         public static final int homeAsUp=0x7f060005;
         public static final int icon=0x7f06002a;
         public static final int ifRoom=0x7f06000a;
         public static final int image=0x7f060027;
-        public static final int imageView1=0x7f060059;
-        public static final int image_view=0x7f060051;
+        public static final int imageView1=0x7f06005b;
+        public static final int image_view=0x7f060053;
         public static final int image_view_1=0x7f06004f;
+        public static final int intro_fragment=0x7f060051;
         public static final int label=0x7f06004e;
         public static final int listMode=0x7f060001;
         public static final int list_item=0x7f060029;
-        public static final int list_view_1=0x7f060061;
+        public static final int list_view_1=0x7f060063;
+        public static final int log_fragment=0x7f060052;
         public static final int middle=0x7f060012;
         public static final int navigation_drawer=0x7f06003e;
         public static final int never=0x7f060009;
         public static final int none=0x7f060010;
         public static final int normal=0x7f060000;
-        public static final int pause=0x7f060065;
-        public static final int post_score=0x7f060053;
-        public static final int post_title=0x7f060052;
-        public static final int posts_list=0x7f060054;
+        public static final int pause=0x7f060067;
+        public static final int post_score=0x7f060055;
+        public static final int post_title=0x7f060054;
+        public static final int posts_list=0x7f060056;
         public static final int progress_bar_black_ink=0x7f060043;
         public static final int progress_bar_color_ink=0x7f060045;
         public static final int progress_circular=0x7f060018;
@@ -1195,7 +1205,7 @@ containing a value of this type.
         public static final int radio1=0x7f060049;
         public static final int radio2=0x7f06004a;
         public static final int radioGroup1=0x7f060047;
-        public static final int resume=0x7f060064;
+        public static final int resume=0x7f060066;
         public static final int search_badge=0x7f060032;
         public static final int search_bar=0x7f060031;
         public static final int search_button=0x7f060033;
@@ -1218,8 +1228,8 @@ containing a value of this type.
         public static final int top_action_bar=0x7f060020;
         public static final int tv_black_ink_level=0x7f060042;
         public static final int tv_color_ink_level=0x7f060044;
-        public static final int tv_put1=0x7f06005a;
-        public static final int tv_put2=0x7f06005c;
+        public static final int tv_put1=0x7f06005c;
+        public static final int tv_put2=0x7f06005e;
         public static final int tv_quantity_copies=0x7f06004b;
         public static final int tv_tray_select=0x7f060046;
         public static final int up=0x7f060021;
@@ -1281,14 +1291,16 @@ containing a value of this type.
         public static final int custom_row=0x7f03001a;
         public static final int fragment_main=0x7f03001b;
         public static final int fragment_navigation_drawer=0x7f03001c;
-        public static final int post_item=0x7f03001d;
-        public static final int posts=0x7f03001e;
-        public static final int preview_layout=0x7f03001f;
-        public static final int put_layout=0x7f030020;
-        public static final int reddit_reader=0x7f030021;
-        public static final int support_simple_spinner_dropdown_item=0x7f030022;
-        public static final int view_pager_layout=0x7f030023;
-        public static final int web_images_layout=0x7f030024;
+        public static final int network_connect_main=0x7f03001d;
+        public static final int network_connect_textview_fragment=0x7f03001e;
+        public static final int post_item=0x7f03001f;
+        public static final int posts=0x7f030020;
+        public static final int preview_layout=0x7f030021;
+        public static final int put_layout=0x7f030022;
+        public static final int reddit_reader=0x7f030023;
+        public static final int support_simple_spinner_dropdown_item=0x7f030024;
+        public static final int view_pager_layout=0x7f030025;
+        public static final int web_images_layout=0x7f030026;
     }
     public static final class menu {
         public static final int global=0x7f0d0000;
@@ -1348,6 +1360,10 @@ containing a value of this type.
         public static final int button_color_copy=0x7f0b001e;
         public static final int button_scan=0x7f0b001f;
         public static final int button_start=0x7f0b0027;
+        public static final int clear_text=0x7f0b002a;
+        public static final int connection_error=0x7f0b002b;
+        public static final int fetch_text=0x7f0b0029;
+        public static final int intro_message=0x7f0b002c;
         public static final int navigation_drawer_close=0x7f0b0019;
         public static final int navigation_drawer_open=0x7f0b0018;
         public static final int title_section1=0x7f0b000e;
@@ -1368,6 +1384,7 @@ containing a value of this type.
         public static final int tv_tray_select_1=0x7f0b0023;
         public static final int tv_tray_select_2=0x7f0b0024;
         public static final int tv_tray_select_3=0x7f0b0025;
+        public static final int welcome_message=0x7f0b0028;
     }
     public static final class style {
         /** 
@@ -1504,6 +1521,7 @@ containing a value of this type.
         /**  Base platform-dependent theme providing a light-themed activity. 
          */
         public static final int Theme_Base_Light=0x7f0c007f;
+        public static final int Widget=0x7f0c008d;
         /**  Styles in here can be extended for customisation in your application. Each utilises
          one of the Base styles. If Holo themes are available on the current platform version
          they will be used instead of the compat styles. 
@@ -1598,6 +1616,8 @@ containing a value of this type.
         public static final int Widget_AppCompat_ProgressBar=0x7f0c000a;
         public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0c0009;
         public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0c0022;
+        public static final int Widget_SampleMessage=0x7f0c008e;
+        public static final int Widget_SampleMessageTile=0x7f0c008f;
     }
     public static final class styleable {
         /**  ============================================ 
@@ -2746,7 +2766,7 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
-            0x0101012f, 0x01010130, 0x01010131, 0x010103ea
+            0x0101012f, 0x01010130, 0x01010131, 0x010103f8
         };
         /**
           <p>
