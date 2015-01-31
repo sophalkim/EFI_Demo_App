@@ -1156,7 +1156,7 @@ containing a value of this type.
         public static final int button_color_copy=0x7f060040;
         public static final int button_scan=0x7f060041;
         public static final int button_start=0x7f06004d;
-        public static final int cancel=0x7f060068;
+        public static final int cancel=0x7f060069;
         public static final int checkbox=0x7f06002d;
         public static final int collapseActionView=0x7f06000d;
         public static final int container=0x7f06003d;
@@ -1172,6 +1172,7 @@ containing a value of this type.
         public static final int et_put_name=0x7f06005d;
         public static final int expand_activities_button=0x7f060026;
         public static final int expanded_menu=0x7f06002c;
+        public static final int fetch_action=0x7f060067;
         public static final int fragments_holder=0x7f060061;
         public static final int home=0x7f060014;
         public static final int homeAsUp=0x7f060005;
@@ -1192,7 +1193,7 @@ containing a value of this type.
         public static final int never=0x7f060009;
         public static final int none=0x7f060010;
         public static final int normal=0x7f060000;
-        public static final int pause=0x7f060067;
+        public static final int pause=0x7f060068;
         public static final int post_score=0x7f060055;
         public static final int post_title=0x7f060054;
         public static final int posts_list=0x7f060056;
@@ -1306,7 +1307,8 @@ containing a value of this type.
         public static final int global=0x7f0d0000;
         public static final int main=0x7f0d0001;
         public static final int menu_add_user=0x7f0d0002;
-        public static final int preview=0x7f0d0003;
+        public static final int network_menu=0x7f0d0003;
+        public static final int preview=0x7f0d0004;
     }
     public static final class raw {
         public static final int alabama=0x7f050000;
