@@ -1,4 +1,4 @@
-package ssk.project.efi_demo_app.ruby_on_rails_json_parser_fragment;
+package ssk.project.efi_demo_app.sample_app_fragment;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,31 +20,23 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
- 
-/**
- * While this looks like a lot of code, all this class
- * actually does is load the posts in to the listview.
- * 
- * @author Hathy 
- */
-public class PostsFragment extends Fragment{
-         
-    ListView postsList;
+
+public class Sample_App_Fragment extends Fragment {
+	ListView postsList;
     ArrayAdapter<Post> adapter;
     Handler handler;
      
-    public String subreddit;
+    String subreddit;
     List<Post> posts;
-    public PostsHolder postsHolder;
+    PostsHolder postsHolder;
      
-    public PostsFragment(){
+    Sample_App_Fragment(){
         handler=new Handler();
         posts=new ArrayList<Post>();
     }    
      
-    public static Fragment newInstance(String subreddit){
+    public static Fragment newInstance(){
         PostsFragment pf=new PostsFragment();
-        pf.subreddit=subreddit;
         pf.postsHolder=new PostsHolder(pf.subreddit);        
         return pf;
     }
@@ -164,5 +156,4 @@ public class PostsFragment extends Fragment{
             return null;
         }
     }
-         
 }
